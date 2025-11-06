@@ -57,6 +57,7 @@ const result = await orchestrator.send({
 
 ## 📚 Documentation
 
+- **[START_HERE.md](./START_HERE.md)** - ⚡ Start her for NPM_TOKEN setup
 - **[VERSIONING.md](./VERSIONING.md)** - Semantic versioning guide
 - **[CONTRIBUTING.md](./CONTRIBUTING.md)** - How to contribute
 - **[NPM_PUBLISHING.md](./NPM_PUBLISHING.md)** - Publishing guide
@@ -111,7 +112,11 @@ NotifyPlan Core følger en **Hybrid Open Core-modell**:
 - **SaaS Hosted:** Betalt, fullt administrert tjeneste
 - **Self-Hosted Enterprise:** Betalt, on-premise løsning
 
-Se [BUSINESS_STRATEGY.md](../notifyplan-online/BUSINESS_STRATEGY.md) for detaljer.
+---
+
+## ⚡ Setup NPM_TOKEN (For Publishing)
+
+**Se [START_HERE.md](./START_HERE.md) for enkel guide!**
 
 ---
 
