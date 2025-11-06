@@ -21,6 +21,7 @@ export interface DigestGroup {
   count: number
   notifications: Array<{
     id: string
+    type: NotificationType
     title: string
     message: string
     createdAt: Date
@@ -101,10 +102,10 @@ export class DigestEngine {
             })
 
             // Mark as sent
-            await this.db.notification.update({
-              where: { id: notification.id },
-              data: { sentAt: new Date() }
-            })
+            await this.db.notification.update(
+              { id: notification.id },
+              { sentAt: new Date() }
+            )
           }
         }
       }
@@ -135,6 +136,7 @@ export class DigestEngine {
       group.count++
       group.notifications.push({
         id: notification.id,
+        type: notification.type as NotificationType,
         title: notification.title,
         message: notification.message,
         createdAt: notification.createdAt
@@ -208,16 +210,16 @@ export class DigestEngine {
       })
 
       // Mark all grouped notifications as sent
-      await this.db.notification.updateMany({
-        where: {
+      await this.db.notification.updateMany(
+        {
           id: {
             in: group.notifications.map(n => n.id)
           }
         },
-        data: {
+        {
           sentAt: new Date()
         }
-      })
+      )
     } catch (error) {
       console.error('Error creating digest:', error)
     }

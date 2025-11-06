@@ -105,10 +105,10 @@ export class NotificationOrchestrator {
 
       // Update notification with sent status
       const sentAt = results.some(r => r.status === 'fulfilled') ? new Date() : null
-      await this.db.notification.update({
-        where: { id: notification.id },
-        data: { sentAt }
-      })
+      await this.db.notification.update(
+        { id: notification.id },
+        { sentAt }
+      )
 
       // Format results
       const channelResults = results.map((result, index) => ({
