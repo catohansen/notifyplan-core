@@ -1,0 +1,34 @@
+# Source files (not needed in npm package)
+src/
+*.ts
+!*.d.ts
+
+# Development files
+node_modules/
+.github/
+*.md
+!README.md
+*.sh
+tsconfig.json
+package-lock.json
+
+# Build artifacts (keep dist/)
+# dist/ is included
+
+# Test files
+*.test.ts
+*.spec.ts
+__tests__/
+test/
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Other
+.env
+.env.local
+*.log
+
