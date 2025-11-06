@@ -1,6 +1,6 @@
 {
   "name": "notifyplan-core",
-  "version": "2.0.1",
+  "version": "2.0.0",
   "description": "NotifyPlan Core - Multi-channel notification system (Open Core)",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
@@ -10,6 +10,11 @@
       "default": "./dist/index.js"
     }
   },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
   "scripts": {
     "build": "tsc",
     "type-check": "tsc --noEmit",
@@ -41,3 +46,4 @@
     "url": "https://github.com/catohansen/notifyplan-core.git"
   }
 }
+
