@@ -99,4 +99,3 @@ MIT License - se [LICENSE](./LICENSE) for detaljer.
 
 **Utviklet med ❤️ av Cato Hansen**  
 **Copyright © 2025 Cato Hansen. All rights reserved.**
-
