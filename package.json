@@ -1,0 +1,37 @@
+{
+  "name": "@notifyplan/core",
+  "version": "2.0.0",
+  "description": "NotifyPlan Core - Multi-channel notification system (Open Core)",
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "build": "tsc",
+    "type-check": "tsc --noEmit",
+    "version:patch": "npm version patch",
+    "version:minor": "npm version minor",
+    "version:major": "npm version major"
+  },
+  "keywords": [
+    "notifications",
+    "saas",
+    "multi-channel",
+    "open-core"
+  ],
+  "author": "Cato Hansen <cato@catohansen.no>",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/catohansen/notifyplan-core.git"
+  }
+}
+
